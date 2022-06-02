@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "https://heroku-springboot-portfolio.herokuapp.com/")
+@CrossOrigin(origins = "https://diegosalvana-ap.web.app")
 @RequestMapping("/api/v1.0")
 public class TestController {
 
