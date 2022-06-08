@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "https://diegosalvana-ap.web.app")
-@RequestMapping("/api/v1.0")
+@CrossOrigin(origins = {"http://localhost:4200", "https://diegosalvana-ap.web.app/"})
+@RequestMapping("/api")
 public class TestController {
 
     @GetMapping("/time")
