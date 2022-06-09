@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class TestController {
 
-    @GetMapping("/time")
+    @GetMapping("/time/now")
     @ResponseStatus(HttpStatus.OK)
     public String getCurrentTime() {
 
