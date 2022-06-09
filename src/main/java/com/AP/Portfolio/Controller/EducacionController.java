@@ -28,12 +28,12 @@ public class EducacionController {
         return educacionService.obtenerEducacion();
     }
 
-    @PostMapping("/educacion")
+    @PostMapping("/educacion/agregar")
     public void agregarEducacion(@RequestBody Educacion itemEducacion) {
         educacionService.agregarEducacion(itemEducacion);
     }
 
-    @PostMapping("/educacion")
+    @PostMapping("/educacion/modificar")
     public void modificarEducacion(@RequestBody Educacion itemEducacion) {
         educacionService.agregarEducacion(itemEducacion);
     }
