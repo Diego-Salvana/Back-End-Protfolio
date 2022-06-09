@@ -10,28 +10,30 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = {"http://localhost:4200", "https://diegosalvana-ap.web.app/"})
+@RequestMapping("/api")
 public class ProyectoController {
 
     @Autowired
     ProyectoService proyectoService;
 
-    @GetMapping("/api/proyectos")
+    @GetMapping("/proyectos")
     @ResponseBody
     public List<Proyecto> obtenerProyecto() {
         return proyectoService.obtenerProyectos();
     }
 
-    @PostMapping("/api/proyectos")
+    @PostMapping("/proyectos")
     public void agregarModificarProyecto(@RequestBody Proyecto itemProyecto) {
         proyectoService.agregarModificarProyecto(itemProyecto);
     }
 
-    @DeleteMapping("/api/proyectos/{id}")
+    @DeleteMapping("/proyectos/{id}")
     public void eliminarProyecto(@PathVariable int id) {
         proyectoService.eliminarProyecto(id);
     }
