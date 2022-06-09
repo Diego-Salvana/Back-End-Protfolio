@@ -28,7 +28,7 @@ public class EducacionController {
         return educacionService.obtenerEducacion();
     }
 
-    @PostMapping("/educacion/agregar/nueva")
+    @PostMapping("/educacion/agregar")
     public void agregarEducacion(@RequestBody Educacion itemEducacion) {
         educacionService.agregarEducacion(itemEducacion);
     }
