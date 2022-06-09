@@ -26,17 +26,17 @@ public class EducacionController {
         return educacionService.obtenerEducacion();
     }
 
-    @PostMapping("/api/educacion")
+    @PostMapping("/api/agregareducacion")
     public void agregarEducacion(@RequestBody Educacion itemEducacion) {
         educacionService.agregarEducacion(itemEducacion);
     }
 
-    @PostMapping("/api/educacion")
+    @PostMapping("/api/modificareducacion")
     public void modificarEducacion(@RequestBody Educacion itemEducacion) {
         educacionService.agregarEducacion(itemEducacion);
     }
 
-    @DeleteMapping("/api/educacion/{id}")
+    @DeleteMapping("/api/eliminareducacion/{id}")
     public void eliminarEducacion(@PathVariable Long id) {
         educacionService.eliminarEducacion(id);
     }
