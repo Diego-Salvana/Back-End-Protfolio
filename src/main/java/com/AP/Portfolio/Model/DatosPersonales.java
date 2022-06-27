@@ -18,15 +18,18 @@ public class DatosPersonales {
     private String apellido;
     private String edad;
     private String acerca;
+    private String fotoPerfilUrl;
 
     public DatosPersonales() {
     }
 
-    public DatosPersonales(String nombre, String apellido, String edad, String acerca) {
+    public DatosPersonales(int id, String nombre, String apellido, String edad, String acerca, String fotoPerfilUrl) {
+        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.acerca = acerca;
+        this.fotoPerfilUrl = fotoPerfilUrl;
     }
 
 }
