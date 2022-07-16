@@ -18,7 +18,7 @@ public class Educacion {
 
     private String institucion;
     private String carrera;
-    private String estado;
+    private String anio;
  
 
     public Educacion() {
@@ -28,7 +28,7 @@ public class Educacion {
         this.id = id;
         this.institucion = institucion;
         this.carrera = carrera;
-        this.estado = estado;
+        this.anio = estado;
     }
 
 }
