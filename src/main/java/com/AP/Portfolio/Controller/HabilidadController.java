@@ -24,8 +24,8 @@ public class HabilidadController {
     
     @GetMapping("/habilidades")
     @ResponseBody
-    public List<Habilidad> obtenerHabilidades(List<Long> id) {
-        return habilidadSvc.findAllById(id);
+    public List<Habilidad> obtenerHabilidades() {
+        return habilidadSvc.obtenerHabilidades();
     }
     
     @PostMapping("/habilidades")
